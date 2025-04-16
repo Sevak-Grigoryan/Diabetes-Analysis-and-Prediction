@@ -54,7 +54,7 @@ A **Random Forest Classifier** was used to train and evaluate the model on the p
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Sevak-Grigoryan/diabetes-prediction.git
+git clone https://github.com/Sevak-Grigoryan/Diabetes-Analysis-and-Prediction.git
 cd diabetes-prediction
 ```
 
