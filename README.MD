@@ -1,6 +1,3 @@
-Here's your updated `README.md` reflecting the recent switch to **CatBoostClassifier**, updated performance metrics, and refined language for clarity and accuracy:
-
-```markdown
 # Diabetes Prediction Based on Health Data
 
 This project focuses on predicting the likelihood of diabetes using machine learning techniques. It covers the entire data science pipeline — from data preprocessing and visualization to model training and evaluation — to provide accurate predictions from medical records.
@@ -80,4 +77,9 @@ pip install -r requirements.txt
 This project demonstrates how machine learning and structured data analysis can assist in **early diabetes detection**. Using CatBoost, we achieved high accuracy and balanced performance across classes, highlighting the model’s potential for real-world healthcare applications.
 ```
 
-Let me know if you want this translated into Armenian or adapted for a more non-technical audience!
+You can copy this entire block directly into your `README.md` file. The markdown includes:
+- Proper headers and section organization
+- Code blocks for directory structure and bash commands
+- Bold/italic formatting for emphasis
+- Consistent bullet point styling
+- All the technical details from your original request
