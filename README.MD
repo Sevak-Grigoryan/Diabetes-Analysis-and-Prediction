@@ -1,20 +1,23 @@
+Here's your updated `README.md` reflecting the recent switch to **CatBoostClassifier**, updated performance metrics, and refined language for clarity and accuracy:
+
+```markdown
 # Diabetes Prediction Based on Health Data
 
-This project focuses on predicting the likelihood of diabetes using machine learning techniques. It involves end-to-end data analytics — from preprocessing and feature exploration to model training and evaluation — to generate accurate predictions from medical records.
+This project focuses on predicting the likelihood of diabetes using machine learning techniques. It covers the entire data science pipeline — from data preprocessing and visualization to model training and evaluation — to provide accurate predictions from medical records.
 
-##  Project Structure
+## Project Structure
 
 ```
-├── data/                   
-├── notebooks/              
-├── src/                    
-├── requirements.txt       
-├── README.md               
+├── data/                   # Raw and processed datasets
+├── notebooks/              # Jupyter notebooks for EDA and modeling
+├── src/                    # Source code modules
+├── requirements.txt        # Dependencies
+├── README.md               # Project overview
 ```
 
-##  Dataset and Analytics
+## Dataset and Analytics
 
-The dataset includes health-related features such as:
+The dataset includes the following health-related features:
 - `Gender`
 - `Age`
 - `Hypertension`
@@ -23,32 +26,39 @@ The dataset includes health-related features such as:
 - `BMI`
 - `HbA1c Level`
 - `Blood Glucose Level`
-- `Diabetes (target)`
+- `Diabetes (target variable)`
 
+Key analytics steps:
+- Cleaning and handling of missing values  
+- Exploratory Data Analysis (EDA) with plots and correlations  
+- Outlier detection and feature distribution analysis  
+- Scaling and transformation for model input
 
-I conducted comprehensive **data analytics**, including:
-
-- Data cleaning and handling of missing values  
-- Exploratory Data Analysis (EDA) with visualizations  
-- Feature correlation and distribution analysis  
-- Scaling and transformation for model-readiness
-
-This process helped identify key predictors (e.g., **Glucose** and **BMI**), remove outliers, and improve model performance through informed preprocessing.
+These steps helped identify important predictors like **Glucose**, **BMI**, and **Age**, while improving model performance through thoughtful preprocessing.
 
 ## Model Overview
 
-A **Random Forest Classifier** was used to train and evaluate the model on the processed dataset. Evaluation was performed using:
+We used **CatBoostClassifier**, a powerful gradient boosting algorithm known for its performance on tabular data.
 
+**Model Highlights**:
+- Trained with 1500 iterations, a learning rate of 0.01, and depth of 7
+- Balanced class distribution using **SMOTE**
+- Scaled features before model training
+- Visual evaluation using built-in training plots
+
+**Performance Evaluation**:
 - Confusion Matrix  
 - Accuracy  
 - Precision, Recall, and F1-score
 
 ## Key Results & Insights
 
-- The model achieved strong predictive performance on both training and test data  
-- The most impactful features for prediction were **Glucose**, **BMI**, and **Age**  
-- The confusion matrix revealed good balance between sensitivity and specificity  
-- Slight differences between training and test performance indicated minor overfitting, but results remained stable and generalizable
+- **Test Accuracy**: 97.23%  
+- **Training Accuracy (Cross-validated)**: 97.19%
+- **Class 0 (Non-diabetic)**: High recall and precision (~1.00)
+- **Class 1 (Diabetic)**: Slightly lower recall (~0.67), room for improvement
+- Class imbalance was mitigated using resampling, improving detection of minority class
+- Overall results show strong generalization with minimal overfitting
 
 ## Getting Started
 
@@ -58,13 +68,16 @@ git clone https://github.com/Sevak-Grigoryan/Diabetes-Analysis-and-Prediction.gi
 cd diabetes-prediction
 ```
 
-2. Install required packages:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Launch the Jupyter notebook or run Python scripts to reproduce the analysis and prediction results.
+3. Run the notebooks or scripts to reproduce the results and visualize model performance.
 
 ## Conclusion
 
-This project shows how structured data analytics and machine learning can help in **early detection of diabetes**. The analytical workflow and trained model together provide valuable insights into how health metrics affect diabetes risk.
+This project demonstrates how machine learning and structured data analysis can assist in **early diabetes detection**. Using CatBoost, we achieved high accuracy and balanced performance across classes, highlighting the model’s potential for real-world healthcare applications.
+```
+
+Let me know if you want this translated into Armenian or adapted for a more non-technical audience!
