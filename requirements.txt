@@ -1,6 +1,7 @@
 numpy
 pandas
 seaborn
+catboost
 scikit-learn
 matplotlib
 joblib
