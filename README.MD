@@ -76,10 +76,3 @@ pip install -r requirements.txt
 
 This project demonstrates how machine learning and structured data analysis can assist in **early diabetes detection**. Using CatBoost, we achieved high accuracy and balanced performance across classes, highlighting the model’s potential for real-world healthcare applications.
 ```
-
-You can copy this entire block directly into your `README.md` file. The markdown includes:
-- Proper headers and section organization
-- Code blocks for directory structure and bash commands
-- Bold/italic formatting for emphasis
-- Consistent bullet point styling
-- All the technical details from your original request
