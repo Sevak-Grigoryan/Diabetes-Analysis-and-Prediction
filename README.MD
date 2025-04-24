@@ -75,4 +75,3 @@ pip install -r requirements.txt
 ## Conclusion
 
 This project demonstrates how machine learning and structured data analysis can assist in **early diabetes detection**. Using CatBoost, we achieved high accuracy and balanced performance across classes, highlighting the model’s potential for real-world healthcare applications.
-```
